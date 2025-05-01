@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anushka's Portfolio</title>
   <style>
     body {
@@ -11,24 +11,61 @@
       margin: 0;
       padding: 0;
     }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e1e1e;
+      padding: 15px 25px;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #f39c12;
+    }
+
     header {
       background-color: #333;
       color: white;
-      padding: 20px;
+      padding-bottom: 20px;
       text-align: center;
     }
+
     section {
       margin: 20px;
     }
+
     h1, h2 {
       color: #333;
     }
+
     .project {
       background-color: #fff;
       padding: 15px;
       border-radius: 8px;
       margin-bottom: 20px;
     }
+
     footer {
       background-color: #333;
       color: white;
@@ -38,17 +75,26 @@
   </style>
 </head>
 <body>
+
   <header>
+    <nav class="navbar">
+      <h1 class="logo">Anushka</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <h1>Anushka's Portfolio</h1>
     <p>Web Developer | Designer | Tech Enthusiast</p>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <p>Hello! I'm Anushka, a passionate web developer. I love creating user-friendly websites and solving problems with code. I'm always learning new technologies to improve my skills.</p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
     <div class="project">
       <h3>Project 1: Personal Portfolio</h3>
@@ -62,8 +108,9 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <p>Contact me at: anushka.email@example.com</p>
   </footer>
+
 </body>
 </html>
